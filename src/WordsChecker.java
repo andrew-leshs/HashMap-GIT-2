@@ -10,7 +10,7 @@ public class WordsChecker {
     }
 
     public boolean hasWord(String word) {
-        Queue<String> queue = new LinkedList<>(Arrays.asList(text.split("\\P{IsAlphabetic}+")));
+        List<String> queue = new LinkedList<>(Arrays.asList(text.split("\\P{IsAlphabetic}+")));
         for (String w : queue) {
             if (w.equals(word)) {
                 return true;
